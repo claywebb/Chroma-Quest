@@ -11,6 +11,7 @@
     <sprite>sprites\spr_skely2</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_player</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,6 +22,7 @@
     <object>objects\obj_fireball</object>
     <object>objects\obj_HUD</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_playersword</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_alpha</room>
