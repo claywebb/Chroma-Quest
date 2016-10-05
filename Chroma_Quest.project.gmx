@@ -8,12 +8,19 @@
   <sprites name="sprites">
     <sprite>sprites\spr_playersword</sprite>
     <sprite>sprites\spr_skely</sprite>
+    <sprite>sprites\spr_skely2</sprite>
+    <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_enemy1</object>
+    <object>objects\obj_melee1</object>
+    <object>objects\obj_range1</object>
+    <object>objects\obj_fireball</object>
+    <object>objects\obj_HUD</object>
+    <object>objects\obj_wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_alpha</room>
