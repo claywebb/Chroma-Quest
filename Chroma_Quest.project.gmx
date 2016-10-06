@@ -14,6 +14,7 @@
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_gate</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -33,6 +34,7 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_playersword</object>
     <object>objects\obj_plate</object>
+    <object>objects\obj_gate</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_alpha</room>
