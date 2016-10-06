@@ -27,6 +27,16 @@
             <kind>1</kind>
             <string>global.plx = x;
 global.ply = y;
+
+color_index = 0;
+
+globalvar colors;
+colors[0] = c_red;
+colors[1] = c_blue;
+colors[2] = c_green;
+colors[3] = c_yellow;
+colors[4] = c_purple;
+
 </string>
           </argument>
         </arguments>
@@ -72,6 +82,43 @@ global.ply = y;
           <argument>
             <kind>0</kind>
             <string>true</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Shader setup
+{
+    hnd_colorIn = shader_get_uniform(shColorReplaceBlend, "colorIn");
+    hnd_colorOut = shader_get_uniform(shColorReplaceBlend, "colorOut");
+    hnd_colorTolerance = shader_get_uniform(shColorReplaceBlend, "colorTolerance");
+    hnd_blend = shader_get_uniform(shColorReplaceBlend, "blend");
+    
+    colorIn = make_color_rgb(255,0,0);
+    colorOut = make_color_rgb(255,0,0);
+    
+    hue_tolerance = 0.1;
+    saturation_tolerance = 0.8;
+    value_tolerance = 0.8;
+    alpha_tolerance = 1.0;
+    blend = 1.0;
+    
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -316,6 +363,75 @@ global.ply = y;
             <kind>1</kind>
             <string>global.plx = x;
 global.ply = y;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Shader draw
+{
+    draw_self();
+
+    shader_set(shColorReplaceBlend);
+    shader_set_uniform_color(hnd_colorIn, colorIn, 1.0);
+    shader_set_uniform_color(hnd_colorOut, colorOut, 1.0);
+    shader_set_uniform_f(hnd_colorTolerance, hue_tolerance, saturation_tolerance, value_tolerance, alpha_tolerance);
+    shader_set_uniform_f(hnd_blend, blend);
+    
+    draw_self();
+
+    shader_reset();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Change color
+{
+    if (color_index &gt;= 4){
+        color_index = 0;
+    } else {
+        color_index++;
+    }
+    
+    color = colors[color_index];
+    self.colorOut = color;
+}
 </string>
           </argument>
         </arguments>
