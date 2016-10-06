@@ -97,17 +97,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_point(global.plx, global.ply) &gt;= 100){
-    mp_linear_step(global.plx, global.ply, 4, 0)
-    show_debug_message(string((x-global.plx)^2 + (y-global.ply)^2));
-}
-else {
-    if (can_fire) {
-         instance_create(x,y,obj_fireball);
-         alarm[0] = room_speed;
-         can_fire = false;
-    }
-}
+            <string>grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
+path = path_add();
+mp_grid_add_instances(grid, obj_wall,1);
+mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
+path_start(path,5,"",1);
 
 </string>
           </argument>
