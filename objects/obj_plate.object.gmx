@@ -84,20 +84,24 @@ pressed = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_color = other.colorOut;
+            <string>// Find the colors of the player and plate
+player_color = other.colorOut;
 plate_color = self.image_blend;
 
+// If the plate is the same color, depress the plate
 if (player_color == plate_color) {
     self.sprite_index = spr_plate_down;
     pressed = true;
     var i;
     for (i = 0; i &lt; instance_number(obj_plate); i++)
    {
+    // depress all plates and press the current plate
     instance = instance_find(obj_plate,i);
     instance.pressed = false;
    }
    for (i = 0; i &lt; instance_number(obj_gate); i++)
    {
+   // Activate all the gates that are the same color as the plate
     instance = instance_find(obj_gate,i);
     if (instance.image_blend == plate_color){
         instance.open = true;

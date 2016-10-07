@@ -111,6 +111,7 @@ global.ply = y;
 
 color_index = 0;
 
+// ## This is where the color palette is created for the entire game ## //
 globalvar colors;
 colors[0] = c_red;
 colors[1] = c_blue;
@@ -469,6 +470,7 @@ global.mirror = true
             <kind>1</kind>
             <string>// Change color
 {
+    
     if (color_index &gt;= 4){
         color_index = 0;
     } else {
@@ -477,6 +479,13 @@ global.mirror = true
     
     color = colors[color_index];
     self.colorOut = color;
+
+    // Set the colors of the walls to match the color of the player
+    for (i = 0; i &lt; instance_number(obj_wall); i++)
+    {
+        instance = instance_find(obj_wall,i);
+        instance.image_blend = color;
+    }
 }
 </string>
           </argument>

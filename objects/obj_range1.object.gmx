@@ -122,12 +122,30 @@ global.rinvul = false
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>//grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
 //path = path_add();
 //mp_grid_add_instances(grid, obj_wall,1);
 //mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
 //path_start(path,5,"",1);
 
+=======
+            <string>if (distance_to_point(global.plx, global.ply) &gt;= 250) {
+    grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
+    path = path_add();
+    mp_grid_add_instances(grid, obj_wall,1);
+    mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
+    path_start(path,5,"",1);
+}
+else {
+    path_end();
+    if (can_fire) {
+        instance_create(x,y,obj_fireball);
+        can_fire = false;
+        alarm[0] = room_speed;
+    }  
+}
+>>>>>>> origin/master
 </string>
           </argument>
         </arguments>
