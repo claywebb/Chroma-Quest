@@ -10,6 +10,7 @@
     <sprite>sprites\spr_skely</sprite>
     <sprite>sprites\spr_skely2</sprite>
     <sprite>sprites\spr_plate_down</sprite>
+    <sprite>sprites\spr_brick</sprite>
     <sprite>sprites\spr_plate_up</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
