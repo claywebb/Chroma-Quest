@@ -33,6 +33,27 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_angle = 337.5
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="11">
       <action>
@@ -83,8 +104,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = direction
-direction-=20
+            <string>
+image_angle = direction
+direction+=20
+
+x = (global.plx)
+y = (global.ply + 9)
+
+
 </string>
           </argument>
         </arguments>
@@ -112,6 +139,34 @@ direction-=20
           <argument>
             <kind>4</kind>
             <string>11</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_range1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>obj_range1</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.invul = true
+    global.ranger_health -=0
+else
+    global.ranger_health -=50
+    global.invul = true
+    alarm[10] = 10
+</string>
           </argument>
         </arguments>
       </action>
