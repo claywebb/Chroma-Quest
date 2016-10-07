@@ -49,8 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.ranger_health = 100
-global.invul = false
+            <string>global.rhealth = 100
+global.rinvul = false
 </string>
           </argument>
         </arguments>
@@ -73,7 +73,7 @@ global.invul = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.invul = false
+            <string>global.rinvul = false
 </string>
           </argument>
         </arguments>
@@ -122,11 +122,11 @@ global.invul = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
-path = path_add();
-mp_grid_add_instances(grid, obj_wall,1);
-mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
-path_start(path,5,"",1);
+            <string>//grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
+//path = path_add();
+//mp_grid_add_instances(grid, obj_wall,1);
+//mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
+//path_start(path,5,"",1);
 
 </string>
           </argument>
@@ -148,7 +148,7 @@ path_start(path,5,"",1);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.ranger_health &lt;= 0){
+            <string>if (global.rhealth &lt;= 0){
     instance_destroy()
     }
 </string>
@@ -173,7 +173,7 @@ path_start(path,5,"",1);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-25</string>
+            <string>-0</string>
           </argument>
         </arguments>
       </action>
