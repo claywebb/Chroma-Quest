@@ -49,10 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.sword_dmg = 5
-
-if global.mirror = true
-    image_xscale = -1
+            <string>global.sword_dmg = 50;
+direction = 45 + (90 * global.playrot);
 </string>
           </argument>
         </arguments>
@@ -95,13 +93,13 @@ if global.mirror = true
 direction += 20
 
 x = (global.plx)
-y = (global.ply + 9)
+y = (global.ply)
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_range1">
+    <event eventtype="4" ename="obj_enemy">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -112,42 +110,32 @@ y = (global.ply + 9)
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_range1</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.rinvul == false 
-    global.rhealth -= global.sword_dmg
-    global.rinvul = true
-    alarm[10] = 5
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_melee1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if global.minvul == false
-    global.mhealth -= global.sword_dmg
-    global.minvul = true
-    alarm[11] = 5
+            <string>if (einvul == false) {
+    ehealth -= global.sword_dmg;
+    einvul = true;
+    alarm[11] = 5;
+    pushdist = 0;
+    switch (global.playrot){
+        case 0: 
+            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {y += 5; pushdist += 5;}
+            break;
+        case 1: 
+            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {x -= 5; pushdist += 5;}
+            break;
+        case 2: 
+            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {y -= 5; pushdist += 5;}
+            break;
+        case 3:
+            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {x += 5; pushdist += 5;}
+            break;
+    }
+}
 </string>
           </argument>
         </arguments>

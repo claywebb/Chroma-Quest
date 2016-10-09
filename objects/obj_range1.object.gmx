@@ -5,10 +5,31 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_enemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited();
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>611</id>
@@ -30,51 +51,6 @@
           <argument>
             <kind>0</kind>
             <string>true</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.rhealth = 100
-global.rinvul = false
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.rinvul = false
-</string>
           </argument>
         </arguments>
       </action>
@@ -122,18 +98,10 @@ global.rinvul = false
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-            <string>//grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
-//path = path_add();
-//mp_grid_add_instances(grid, obj_wall,1);
-//mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
-//path_start(path,5,"",1);
-
-=======
             <string>if (distance_to_point(global.plx, global.ply) &gt;= 250) {
     grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
     path = path_add();
-    mp_grid_add_instances(grid, obj_wall,1);
+    mp_grid_add_instances(grid, obj_wall,0);
     mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
     path_start(path,5,"",1);
 }
@@ -145,7 +113,6 @@ else {
         alarm[0] = room_speed;
     }  
 }
->>>>>>> origin/master
 </string>
           </argument>
         </arguments>
@@ -166,32 +133,10 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.rhealth &lt;= 0){
-    instance_destroy()
-    }
+            <string>if (ehealth &lt;= 0){
+    instance_destroy();
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>721</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_health</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>-0</string>
           </argument>
         </arguments>
       </action>

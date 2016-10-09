@@ -5,15 +5,15 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_enemy</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>2</exetype>
@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.mhealth = 100
-global.minvul = false
-</string>
+            <string>ehealth</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>100</string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="2" enumb="11">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,7 +49,7 @@ global.minvul = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.minvul = false
+            <string>event_inherited();
 </string>
           </argument>
         </arguments>
@@ -72,12 +72,9 @@ global.minvul = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
-//path = path_add();
-//mp_grid_add_instances(grid, obj_wall,1);
-//mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
-//path_start(path,5,"",1);
-
+            <string>if (ehealth &lt;= 0){
+    instance_destroy()
+    }
 </string>
           </argument>
         </arguments>
@@ -98,15 +95,42 @@ global.minvul = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.mhealth &lt;= 0){
-    instance_destroy()
-    }
+            <string>grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
+path = path_add();
+mp_grid_add_instances(grid, obj_wall,0);
+mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
+path_start(path,5,"",1);
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>ehealth</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>721</id>
@@ -123,7 +147,7 @@ global.minvul = false
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-0</string>
+            <string>-50</string>
           </argument>
         </arguments>
       </action>

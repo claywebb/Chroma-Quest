@@ -31,10 +31,11 @@
     <shader type="GLSLES">shaders\shColorReplaceBlend.shader</shader>
   </shaders>
   <objects name="objects">
+    <object>objects\obj_enemy</object>
     <object>objects\obj_player</object>
+    <object>objects\obj_fireball</object>
     <object>objects\obj_melee1</object>
     <object>objects\obj_range1</object>
-    <object>objects\obj_fireball</object>
     <object>objects\obj_HUD</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_playersword</object>
