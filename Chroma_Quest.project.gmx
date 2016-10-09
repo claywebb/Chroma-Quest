@@ -15,11 +15,15 @@
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_playerghost</sprite>
     <sprite>sprites\spr_gate</sprite>
     <sprite>sprites\spr_exitbtm</sprite>
     <sprite>sprites\spr_playbtn</sprite>
     <sprite>sprites\spr_ccbtn</sprite>
     <sprite>sprites\spr_instbtn</sprite>
+    <sprite>sprites\spr_backbtn</sprite>
+    <sprite>sprites\spr_exitarrow</sprite>
+    <sprite>sprites\spr_heart</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -40,17 +44,23 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_playersword</object>
     <object>objects\obj_plate</object>
+    <object>objects\obj_setplate</object>
     <object>objects\obj_gate</object>
+    <object>objects\obj_setgate</object>
     <objects name="Menu">
       <object>objects\obj_exitbtn</object>
       <object>objects\obj_playbtn</object>
       <object>objects\obj_ccbtn</object>
       <object>objects\obj_instbtn</object>
+      <object>objects\obj_backbtn</object>
     </objects>
+    <object>objects\obj_exit</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_alpha</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_alpha</room>
+    <room>rooms\rm_cc</room>
+    <room>rooms\rm_instr</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
