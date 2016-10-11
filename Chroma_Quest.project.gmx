@@ -31,6 +31,8 @@
     <sprite>sprites\spr_backbtn</sprite>
     <sprite>sprites\spr_exitarrow</sprite>
     <sprite>sprites\spr_heart</sprite>
+    <sprite>sprites\spr_inst</sprite>
+    <sprite>sprites\spr_comsoon</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -55,11 +57,13 @@
     <object>objects\obj_gate</object>
     <object>objects\obj_setgate</object>
     <objects name="Menu">
+      <object>objects\obj_inst</object>
       <object>objects\obj_exitbtn</object>
       <object>objects\obj_playbtn</object>
       <object>objects\obj_ccbtn</object>
       <object>objects\obj_instbtn</object>
       <object>objects\obj_backbtn</object>
+      <object>objects\obj_comsoon</object>
     </objects>
     <object>objects\obj_exit</object>
   </objects>
