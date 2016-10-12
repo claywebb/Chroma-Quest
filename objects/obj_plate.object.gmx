@@ -91,7 +91,9 @@ plate_color = self.image_blend;
 // If the plate is the same color, depress the plate
 if (player_color == plate_color) {
     self.sprite_index = spr_plate_down;
-    audio_play_sound(plate_pressed, 10, false);
+    if (!pressed){
+        audio_play_sound(plate_pressed, 10, false);
+    }
     pressed = true;
     var i;
     for (i = 0; i &lt; instance_number(obj_plate); i++)
