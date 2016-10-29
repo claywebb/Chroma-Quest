@@ -189,6 +189,7 @@ if (distance_to_point(global.plx, global.ply) &lt;= 250 and !inrange){
             <string>if (ehealth &lt;= 0){
     instance_destroy();
 }
+event_inherited();
 </string>
           </argument>
         </arguments>

@@ -120,21 +120,7 @@ y = (global.ply)
     ehealth -= global.sword_dmg;
     einvul = true;
     alarm[11] = 5;
-    pushdist = 0;
-    switch (global.playrot){
-        case 0: 
-            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {y -= 5; pushdist += 5;}
-            break;
-        case 1: 
-            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {x -= 5; pushdist += 5;}
-            break;
-        case 2: 
-            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {y += 5; pushdist += 5;}
-            break;
-        case 3:
-            while (place_free(x, y) &amp;&amp; pushdist &lt; global.knockback) {x += 5; pushdist += 5;}
-            break;
-    }
+    beingpushed = global.playrot;
 }
 </string>
           </argument>
