@@ -15,6 +15,8 @@
   <sprites name="sprites">
     <sprite>sprites\spr_playersword</sprite>
     <sprite>sprites\spr_skely</sprite>
+    <sprite>sprites\spr_mage</sprite>
+    <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>
     <sprite>sprites\spr_plate_down</sprite>
     <sprite>sprites\spr_brick</sprite>
@@ -34,6 +36,8 @@
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_inst</sprite>
     <sprite>sprites\spr_comsoon</sprite>
+    <sprite>sprites\spr_fire</sprite>
+    <sprite>sprites\spr_firetarg</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -47,11 +51,7 @@
     <shader type="GLSLES">shaders\shColorReplaceBlend.shader</shader>
   </shaders>
   <objects name="objects">
-    <object>objects\obj_enemy</object>
     <object>objects\obj_player</object>
-    <object>objects\obj_fireball</object>
-    <object>objects\obj_melee1</object>
-    <object>objects\obj_range1</object>
     <object>objects\obj_HUD</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_playersword</object>
@@ -67,9 +67,18 @@
       <object>objects\obj_instbtn</object>
       <object>objects\obj_backbtn</object>
       <object>objects\obj_comsoon</object>
+      <object>objects\obj_logo</object>
     </objects>
     <object>objects\obj_exit</object>
-    <object>objects\obj_logo</object>
+    <objects name="Enemies">
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_range1</object>
+      <object>objects\obj_mage</object>
+      <object>objects\obj_melee1</object>
+      <object>objects\obj_fireball</object>
+      <object>objects\obj_groundfire</object>
+      <object>objects\obj_firetarg</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
