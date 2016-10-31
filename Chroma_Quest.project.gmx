@@ -30,6 +30,8 @@
     <sprite>sprites\spr_exitbtm</sprite>
     <sprite>sprites\spr_playbtn</sprite>
     <sprite>sprites\spr_ccbtn</sprite>
+    <sprite>sprites\spr_barrel_destoryed</sprite>
+    <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_instbtn</sprite>
     <sprite>sprites\spr_backbtn</sprite>
     <sprite>sprites\spr_exitarrow</sprite>
@@ -61,6 +63,7 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_playersword</object>
     <object>objects\obj_plate</object>
+    <object>objects\obj_momentary_plate</object>
     <object>objects\obj_setplate</object>
     <object>objects\obj_gate</object>
     <object>objects\obj_setgate</object>
