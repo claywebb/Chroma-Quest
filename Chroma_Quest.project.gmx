@@ -38,6 +38,11 @@
     <sprite>sprites\spr_comsoon</sprite>
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_firetarg</sprite>
+    <sprites name="CC">
+      <sprite>sprites\spr_default</sprite>
+      <sprite>sprites\spr_oneshot</sprite>
+      <sprite>sprites\spr_risky</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -79,8 +84,15 @@
       <object>objects\obj_groundfire</object>
       <object>objects\obj_firetarg</object>
     </objects>
+    <objects name="CC">
+      <object>objects\obj_default</object>
+      <object>objects\obj_oneshot</object>
+      <object>objects\obj_risky</object>
+    </objects>
+    <object>objects\obj_startup</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_splash</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_alpha</room>
     <room>rooms\rm_cc</room>

@@ -11,46 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>721</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_health</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>100</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>711</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_life</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>3</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>611</id>
         <kind>6</kind>
         <userelative>-1</userelative>
@@ -164,30 +124,6 @@ colors[4] = c_purple;
           <argument>
             <kind>0</kind>
             <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.knockback</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>150</string>
           </argument>
         </arguments>
       </action>
@@ -403,7 +339,7 @@ global.playrot = 2;
             <string>if can_attack{
     instance_create(x, y+9, obj_playersword)
     can_attack = false
-    alarm [2] = (1/3) *room_speed
+    alarm [2] = global.swingspeed;
 }
 </string>
           </argument>

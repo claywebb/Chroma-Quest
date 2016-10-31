@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>0.6*(global.swingspeed)</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -49,8 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.sword_dmg = 50;
-direction = 45 + (90 * global.playrot);
+            <string>direction = 45 + (90 * global.playrot);
 </string>
           </argument>
         </arguments>
@@ -90,7 +89,7 @@ direction = 45 + (90 * global.playrot);
           <argument>
             <kind>1</kind>
             <string>image_angle = direction
-direction += 20
+direction += 150/global.swingspeed;
 
 x = (global.plx)
 y = (global.ply)
