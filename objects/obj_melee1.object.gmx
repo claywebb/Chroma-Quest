@@ -100,7 +100,7 @@ event_inherited();
 path = path_add();
 mp_grid_add_instances(grid, obj_wall,0);
 mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
-path_start(path,5,"",1);
+path_start(path,3*global.gamespeed,"",1);
 
 </string>
           </argument>

@@ -222,7 +222,7 @@ global.playrot = 0;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-10</string>
+            <string>-6*global.gamespeed</string>
           </argument>
         </arguments>
       </action>
@@ -270,7 +270,7 @@ global.ply = y;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>6*global.gamespeed</string>
           </argument>
         </arguments>
       </action>
@@ -363,7 +363,7 @@ global.playrot = 2;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>10</string>
+            <string>6*global.gamespeed</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -433,7 +433,7 @@ global.playrot = 3;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-10</string>
+            <string>-6*global.gamespeed</string>
           </argument>
           <argument>
             <kind>0</kind>
