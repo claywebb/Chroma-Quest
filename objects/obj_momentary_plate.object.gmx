@@ -69,7 +69,7 @@ plate_color = self.image_blend;
 
 inst = collision_rectangle(x-(sprite_width/2), y-(sprite_height/2), x+(sprite_width/2), y+(sprite_height/2), obj_player, false, true)
 
-if inst != noone
+if ((inst != noone) &amp;&amp; (!pressed))
 {
     player_color = inst.colorOut;
     if (player_color == plate_color) {
@@ -103,18 +103,20 @@ if inst != noone
     
 }
 }else{
+    if (inst == noone &amp;&amp; pressed) {
     var i;
     self.pressed = false;
    for (i = 0; i &lt; instance_number(obj_gate); i++)
    {
    // Activate all the gates that are the same color as the plate
     instance = instance_find(obj_gate,i);
-
+    if(instance.image_blend == plate_color){
         instance.open = false;
         instance.image_alpha = 1;
         instance.solid = true;
-
+    }
    }
+}
 }
 </string>
           </argument>
