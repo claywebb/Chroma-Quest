@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\hit</sound>
@@ -24,6 +25,7 @@
     <sprite>sprites\spr_plate_up</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_unmuted</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_playerghost</sprite>
     <sprite>sprites\spr_gate</sprite>
@@ -45,6 +47,7 @@
       <sprite>sprites\spr_oneshot</sprite>
       <sprite>sprites\spr_risky</sprite>
     </sprites>
+    <sprite>sprites\spr_muted</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -76,6 +79,7 @@
       <object>objects\obj_backbtn</object>
       <object>objects\obj_comsoon</object>
       <object>objects\obj_logo</object>
+      <object>objects\obj_mutebtn</object>
     </objects>
     <object>objects\obj_exit</object>
     <objects name="Enemies">
