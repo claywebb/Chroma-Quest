@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (global.cardID) {
+            <string>
+switch (global.cardID) {
     case 0: //Default
         health = 100;
         lives = 3;
