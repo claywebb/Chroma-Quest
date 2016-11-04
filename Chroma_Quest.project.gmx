@@ -15,6 +15,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_playersword</sprite>
     <sprite>sprites\spr_skely</sprite>
+    <sprite>sprites\spr_tempskel</sprite>
     <sprite>sprites\spr_mage</sprite>
     <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>

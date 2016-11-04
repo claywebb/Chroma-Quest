@@ -116,7 +116,9 @@ y = (global.ply)
           <argument>
             <kind>1</kind>
             <string>if (einvul == false) {
-    ehealth -= global.sword_dmg;
+    if(instance_find(obj_player, 0).color_index == mycolor){
+        ehealth -= global.sword_dmg;
+    }
     einvul = true;
     alarm[11] = 5;
     beingpushed = global.playrot;
