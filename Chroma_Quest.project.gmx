@@ -15,7 +15,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_playersword</sprite>
     <sprite>sprites\spr_skely</sprite>
-    <sprite>sprites\spr_tempskel</sprite>
     <sprite>sprites\spr_mage</sprite>
     <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>
@@ -96,7 +95,7 @@
     <object>objects\obj_startup</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_startup</room>
+    <room>rooms\rm_splash</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_alpha</room>
     <room>rooms\rm_cc</room>
