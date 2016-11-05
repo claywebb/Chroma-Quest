@@ -609,7 +609,7 @@ global.playrot = 1;
         instance = instance_find(obj_wall,i);
         instance.image_blend = color;
     }
-}
+}        
 </string>
           </argument>
         </arguments>
