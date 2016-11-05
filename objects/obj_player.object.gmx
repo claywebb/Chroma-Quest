@@ -411,6 +411,7 @@ global.ply = y;
             <kind>1</kind>
             <string>image_angle = 270;
 global.playrot = 3;
+
 </string>
           </argument>
         </arguments>
