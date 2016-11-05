@@ -65,6 +65,7 @@
     <object>objects\obj_playersword</object>
     <object>objects\obj_plate</object>
     <object>objects\obj_momentary_plate</object>
+    <object>objects\obj_timed_plate</object>
     <object>objects\obj_setplate</object>
     <object>objects\obj_gate</object>
     <object>objects\obj_setgate</object>
