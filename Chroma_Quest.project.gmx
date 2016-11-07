@@ -20,9 +20,11 @@
     <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>
     <sprite>sprites\spr_plate_down</sprite>
+    <sprite>sprites\spr_timed_plate_down</sprite>
     <sprite>sprites\spr_brick</sprite>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_plate_up</sprite>
+    <sprite>sprites\spr_timed_plate_up</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
