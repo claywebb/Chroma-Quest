@@ -49,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction = 45 + (90 * global.playrot);
+            <string>direction = global.playrot - 45;
 </string>
           </argument>
         </arguments>
@@ -121,7 +121,8 @@ y = (global.ply)
     }
     einvul = true;
     alarm[11] = 5;
-    beingpushed = global.playrot;
+    beingpushed = true;
+    pushang = global.playrot;
 }
 </string>
           </argument>
