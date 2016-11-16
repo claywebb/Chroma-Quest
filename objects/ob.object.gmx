@@ -3,7 +3,7 @@
   <spriteName>spr_plate_up</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>100</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -37,6 +37,32 @@ pressed = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>pressed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -62,60 +88,6 @@ pressed = false;
         self.sprite_index = spr_plate_up;
     }
 }
-
-
-plate_color = self.image_blend;
-
-
-inst = collision_rectangle(x-(sprite_width/2), y-(sprite_height/2), x+(sprite_width/2), y+(sprite_height/2), obj_player, false, true)
-
-if inst != noone
-{
-    player_color = inst.colorOut;
-    if (player_color == plate_color) {
-    self.sprite_index = spr_plate_down;
-    if (!pressed){
-        audio_play_sound(plate_pressed, 10, false);
-    }
-    pressed = true;
-    var i;
-    for (i = 0; i &lt; instance_number(obj_plate); i++)
-   {
-    // depress all plates and press the current plate
-    instance = instance_find(obj_plate,i);
-    instance.pressed = false;
-   }
-   for (i = 0; i &lt; instance_number(obj_gate); i++)
-   {
-   // Activate all the gates that are the same color as the plate
-    instance = instance_find(obj_gate,i);
-    if (instance.image_blend == plate_color){
-        instance.open = true;
-        instance.image_alpha = .5;
-        instance.solid = false;
-    }else{
-        instance.open = false;
-        instance.image_alpha = 1;
-        instance.solid = true;
-    }
-   }
-    pressed = true;
-    
-}
-}else{
-    var i;
-    self.pressed = false;
-   for (i = 0; i &lt; instance_number(obj_gate); i++)
-   {
-   // Activate all the gates that are the same color as the plate
-    instance = instance_find(obj_gate,i);
-
-        instance.open = false;
-        instance.image_alpha = 1;
-        instance.solid = true;
-
-   }
-}
 </string>
           </argument>
         </arguments>
@@ -138,7 +110,7 @@ if inst != noone
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*// Find the colors of the player and plate
+            <string>// Find the colors of the player and plate
 player_color = other.colorOut;
 plate_color = self.image_blend;
 
@@ -174,8 +146,31 @@ if (player_color == plate_color) {
     
 
 }
-*/
 </string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>301</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_alarm</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>300</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>10</string>
           </argument>
         </arguments>
       </action>

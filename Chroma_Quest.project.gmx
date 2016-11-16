@@ -20,9 +20,11 @@
     <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>
     <sprite>sprites\spr_plate_down</sprite>
+    <sprite>sprites\spr_timed_plate_down</sprite>
     <sprite>sprites\spr_brick</sprite>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_plate_up</sprite>
+    <sprite>sprites\spr_timed_plate_up</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
@@ -46,7 +48,15 @@
       <sprite>sprites\spr_oneshot</sprite>
       <sprite>sprites\spr_risky</sprite>
     </sprites>
+<<<<<<< HEAD
     <sprite>sprites\spr_spike</sprite>
+=======
+    <sprite>sprites\spr_draghead</sprite>
+    <sprite>sprites\spr_dragbody</sprite>
+    <sprite>sprites\spr_flip_db</sprite>
+    <sprite>sprites\spr_dragtail</sprite>
+    <sprite>sprites\spr_flip_dt</sprite>
+>>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -81,6 +91,7 @@
       <object>objects\obj_logo</object>
     </objects>
     <object>objects\obj_exit</object>
+    <object>objects\obj_dragexit</object>
     <objects name="Enemies">
       <object>objects\obj_enemy</object>
       <object>objects\obj_range1</object>
@@ -96,7 +107,16 @@
       <object>objects\obj_risky</object>
     </objects>
     <object>objects\obj_startup</object>
+<<<<<<< HEAD
     <object>objects\obj_spike</object>
+=======
+    <objects name="Boss">
+      <object>objects\obj_draghead</object>
+      <object>objects\obj_dragfire</object>
+      <object>objects\obj_dragbody</object>
+      <object>objects\obj_dragtail</object>
+    </objects>
+>>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
@@ -104,6 +124,7 @@
     <room>rooms\rm_alpha</room>
     <room>rooms\rm_cc</room>
     <room>rooms\rm_instr</room>
+    <room>rooms\rm_bossroom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
