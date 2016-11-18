@@ -48,15 +48,11 @@
       <sprite>sprites\spr_oneshot</sprite>
       <sprite>sprites\spr_risky</sprite>
     </sprites>
-<<<<<<< HEAD
-    <sprite>sprites\spr_spike</sprite>
-=======
     <sprite>sprites\spr_draghead</sprite>
     <sprite>sprites\spr_dragbody</sprite>
     <sprite>sprites\spr_flip_db</sprite>
     <sprite>sprites\spr_dragtail</sprite>
     <sprite>sprites\spr_flip_dt</sprite>
->>>>>>> origin/master
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -107,16 +103,12 @@
       <object>objects\obj_risky</object>
     </objects>
     <object>objects\obj_startup</object>
-<<<<<<< HEAD
-    <object>objects\obj_spike</object>
-=======
     <objects name="Boss">
       <object>objects\obj_draghead</object>
       <object>objects\obj_dragfire</object>
       <object>objects\obj_dragbody</object>
       <object>objects\obj_dragtail</object>
     </objects>
->>>>>>> origin/master
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
