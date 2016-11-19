@@ -145,7 +145,7 @@ self.reflect = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>motion_set(obj_player.image_angle + 90, 8)
+            <string>motion_set(obj_player.image_angle, 8)
     image_angle = direction
 </string>
           </argument>
