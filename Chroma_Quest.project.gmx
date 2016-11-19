@@ -53,6 +53,7 @@
     <sprite>sprites\spr_flip_db</sprite>
     <sprite>sprites\spr_dragtail</sprite>
     <sprite>sprites\spr_flip_dt</sprite>
+    <sprite>sprites\spr_receptacle</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -109,6 +110,7 @@
       <object>objects\obj_dragbody</object>
       <object>objects\obj_dragtail</object>
     </objects>
+    <object>objects\obj_receptacle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
