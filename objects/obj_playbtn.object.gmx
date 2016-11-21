@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>switch (global.cardID) {
     case 0: //Default
-        health = 100;
+        global.phealth = 100;
         lives = 3;
         global.knockback = 50;
         global.swingspeed = room_speed * (1/3);
@@ -35,7 +35,7 @@
         global.gamespeed = 1.00;
         break;
     case 1: //Risky
-        health = 100;
+        global.phealth = 100;
         lives = 2;
         global.knockback = 50;
         global.swingspeed = room_speed * (1/3);
@@ -43,7 +43,7 @@
         global.gamespeed = 2.00;
         break;
     case 2: //Oneshot
-        health = 100;
+        global.phealth = 80;
         lives = 2;
         global.knockback = 50;
         global.swingspeed = room_speed  * (2/3);
