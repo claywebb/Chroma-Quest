@@ -231,6 +231,8 @@ audio_play_sound(Ice_Cave, 100, true);</code>
     <instance objName="obj_timed_plate" x="320" y="384" name="inst_6A9F115A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dragexit" x="928" y="64" name="inst_5C77AFB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_receptacle" x="352" y="480" name="inst_18EAB2AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrel" x="224" y="192" name="inst_11E1D111" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_barrel" x="160" y="480" name="inst_1861CD60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

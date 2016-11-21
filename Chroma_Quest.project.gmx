@@ -34,7 +34,8 @@
     <sprite>sprites\spr_exitbtm</sprite>
     <sprite>sprites\spr_playbtn</sprite>
     <sprite>sprites\spr_ccbtn</sprite>
-    <sprite>sprites\spr_barrel_destoryed</sprite>
+    <sprite>sprites\spr_barrel_destroyed</sprite>
+    <sprite>sprites\spr_barrel</sprite>
     <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_instbtn</sprite>
     <sprite>sprites\spr_backbtn</sprite>
@@ -115,6 +116,8 @@
     </objects>
     <object>objects\obj_receptacle</object>
     <object>objects\obj_mutebtn</object>
+    <object>objects\obj_barrel</object>
+    <object>objects\obj_heart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
