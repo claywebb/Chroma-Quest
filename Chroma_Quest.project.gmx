@@ -29,6 +29,7 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_playerghost</sprite>
+    <sprite>sprites\spr_unmuted</sprite>
     <sprite>sprites\spr_gate</sprite>
     <sprite>sprites\spr_exitbtm</sprite>
     <sprite>sprites\spr_playbtn</sprite>
@@ -40,6 +41,7 @@
     <sprite>sprites\spr_exitarrow</sprite>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_inst</sprite>
+    <sprite>sprites\spr_muted</sprite>
     <sprite>sprites\spr_comsoon</sprite>
     <sprite>sprites\spr_fire</sprite>
     <sprite>sprites\spr_firetarg</sprite>
@@ -62,6 +64,7 @@
   <scripts name="scripts">
     <script>scripts\shader_set_uniform_color.gml</script>
     <script>scripts\shader_set_uniform_rgba.gml</script>
+    <script>scripts\toggle_mute.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shColorReplaceBlend.shader</shader>
@@ -111,6 +114,7 @@
       <object>objects\obj_dragtail</object>
     </objects>
     <object>objects\obj_receptacle</object>
+    <object>objects\obj_mutebtn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
