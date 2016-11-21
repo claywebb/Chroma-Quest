@@ -99,6 +99,7 @@ colors[2] = c_green;
 colors[3] = c_yellow;
 colors[4] = c_purple;
 
+health = global.phealth;
 </string>
           </argument>
         </arguments>
@@ -146,7 +147,7 @@ colors[4] = c_purple;
           <argument>
             <kind>1</kind>
             <string>lives -= 1;
-health = 100;
+health = global.phealth;
 sprite_index = spr_player;
 </string>
           </argument>
