@@ -99,6 +99,8 @@ colors[2] = c_green;
 colors[3] = c_yellow;
 colors[4] = c_purple;
 
+invincible = 0
+
 </string>
           </argument>
         </arguments>

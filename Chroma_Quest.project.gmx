@@ -42,6 +42,8 @@
     <sprite>sprites\spr_inst</sprite>
     <sprite>sprites\spr_comsoon</sprite>
     <sprite>sprites\spr_fire</sprite>
+    <sprite>sprites\spr_shrapnel</sprite>
+    <sprite>sprites\spr_bomb</sprite>
     <sprite>sprites\spr_firetarg</sprite>
     <sprites name="CC">
       <sprite>sprites\spr_default</sprite>
@@ -54,6 +56,7 @@
     <sprite>sprites\spr_dragtail</sprite>
     <sprite>sprites\spr_flip_dt</sprite>
     <sprite>sprites\spr_receptacle</sprite>
+    <sprite>sprites\spr_spike</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -74,6 +77,7 @@
     <object>objects\obj_plate</object>
     <object>objects\obj_momentary_plate</object>
     <object>objects\obj_timed_plate</object>
+    <object>objects\obj_spike</object>
     <object>objects\obj_setplate</object>
     <object>objects\obj_gate</object>
     <object>objects\obj_setgate</object>
@@ -94,8 +98,11 @@
       <object>objects\obj_range1</object>
       <object>objects\obj_mage</object>
       <object>objects\obj_melee1</object>
+      <object>objects\obj_bomber</object>
       <object>objects\obj_fireball</object>
       <object>objects\obj_groundfire</object>
+      <object>objects\obj_shrapnel</object>
+      <object>objects\obj_bomb</object>
       <object>objects\obj_firetarg</object>
     </objects>
     <objects name="CC">
