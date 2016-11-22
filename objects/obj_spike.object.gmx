@@ -25,39 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>i = irandom(4)
-spikecolour = colors[i]
+            <string>// Randomizing color of spike
+i = irandom(4)
+spike_color = colors[i]
 self.image_blend = colors[i]
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_player">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>obj_player</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Player collision with spike
-
-{    
-    if (place_meeting(x,y,obj_player))
-    global.health -=10 
-}    
-
 </string>
           </argument>
         </arguments>
