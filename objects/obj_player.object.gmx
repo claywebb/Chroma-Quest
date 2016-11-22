@@ -128,6 +128,26 @@ invincible = 0
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>721</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>global.phealth</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="5">
       <action>
@@ -147,7 +167,7 @@ invincible = 0
           <argument>
             <kind>1</kind>
             <string>lives -= 1;
-health = 100;
+health = global.phealth;
 sprite_index = spr_player;
 </string>
           </argument>
