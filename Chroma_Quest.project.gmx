@@ -33,14 +33,14 @@
     <sprite>sprites\spr_gate</sprite>
     <sprite>sprites\spr_gate_rec</sprite>
     <sprite>sprites\spr_receptacle</sprite>
-    <sprite>sprites\spr_exitbtm</sprite>
     <sprite>sprites\spr_playbtn</sprite>
     <sprite>sprites\spr_ccbtn</sprite>
+    <sprite>sprites\spr_instbtn</sprite>
+    <sprite>sprites\spr_exitbtm</sprite>
+    <sprite>sprites\spr_backbtn</sprite>
     <sprite>sprites\spr_barrel_destroyed</sprite>
     <sprite>sprites\spr_barrel</sprite>
     <sprite>sprites\spr_key</sprite>
-    <sprite>sprites\spr_instbtn</sprite>
-    <sprite>sprites\spr_backbtn</sprite>
     <sprite>sprites\spr_exitarrow</sprite>
     <sprite>sprites\spr_heart</sprite>
     <sprite>sprites\spr_inst</sprite>
