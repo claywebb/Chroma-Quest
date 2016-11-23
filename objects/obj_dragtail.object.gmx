@@ -49,11 +49,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.dragdmg</string>
+            <string>global.draghealth</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>200</string>
           </argument>
         </arguments>
       </action>
@@ -86,7 +86,7 @@
     }
     bottom = !bottom
     global.dragcolor = irandom(4);
-    global.dragdmg++
+    global.draghealth-=global.sword_dmg;
 }
 </string>
           </argument>

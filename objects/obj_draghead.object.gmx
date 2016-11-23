@@ -32,6 +32,30 @@ i = 0;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>toggle</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>true</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -51,12 +75,14 @@ i = 0;
           <argument>
             <kind>1</kind>
             <string>image_angle = direction
+if toggle{
 if(direction &gt;=270) up = -1;
 if(direction &lt;=90) up = 1;
 direction += up * 4;
 global.dragdir = direction;
 instance_create(x,y,obj_dragfire);
-
+}
+toggle = !toggle;
 </string>
           </argument>
         </arguments>

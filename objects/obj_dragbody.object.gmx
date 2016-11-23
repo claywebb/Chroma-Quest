@@ -53,7 +53,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>200</string>
           </argument>
         </arguments>
       </action>
@@ -76,12 +76,12 @@
           <argument>
             <kind>1</kind>
             <string>image_blend = colors[global.dragcolor];
-if (global.dragdmg != healthchange){
-    healthchange = global.dragdmg;
+if (global.draghealth != healthchange){
+    healthchange = global.draghealth;
     if (sprite_index == spr_dragbody) sprite_index = spr_flip_db;
     else{ sprite_index = spr_dragbody;}
 }
-if (global.dragdmg &gt;= 5){
+if (global.draghealth &lt;= 0){
     with(instance_find(obj_dragbody,0)){instance_destroy();}
     with(instance_find(obj_draghead,0)){instance_destroy();}
     with(instance_find(obj_dragtail,0)){instance_destroy();}
