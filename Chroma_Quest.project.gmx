@@ -59,6 +59,9 @@
     <sprite>sprites\spr_dragtail</sprite>
     <sprite>sprites\spr_flip_dt</sprite>
     <sprite>sprites\spr_splash_sword</sprite>
+    <sprite>sprites\spr_spike</sprite>
+    <sprite>sprites\spr_bomb</sprite>
+    <sprite>sprites\spr_shrapnel</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -84,6 +87,7 @@
     <object>objects\obj_gate</object>
     <object>objects\obj_gate_rec</object>
     <object>objects\obj_setgate</object>
+    <object>objects\obj_spike</object>
     <object>objects\obj_receptacle</object>
     <objects name="Menu">
       <object>objects\obj_inst</object>
@@ -101,13 +105,17 @@
       <object>objects\obj_enemy</object>
       <object>objects\obj_range1</object>
       <object>objects\obj_mage</object>
+      <object>objects\obj_bomber</object>
       <object>objects\obj_melee1</object>
       <object>objects\obj_fireball</object>
       <object>objects\obj_groundfire</object>
+      <object>objects\obj_bomb</object>
+      <object>objects\obj_shrapnel</object>
       <object>objects\obj_firetarg</object>
     </objects>
     <objects name="CC">
       <object>objects\obj_default</object>
+      <object>objects\obj_dropper</object>
       <object>objects\obj_oneshot</object>
       <object>objects\obj_risky</object>
     </objects>
