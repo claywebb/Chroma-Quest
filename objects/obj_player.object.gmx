@@ -99,6 +99,8 @@ colors[2] = c_green;
 colors[3] = c_yellow;
 colors[4] = c_purple;
 
+self.colorOut = colors[color_index];
+
 invincible = 0
 </string>
           </argument>

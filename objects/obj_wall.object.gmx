@@ -26,8 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>//image_blend = make_color_rgb(186, 80, 24)
-
-image_blend =  instance_find(obj_player,0).colorOut;
+for (i = 0; i &lt; instance_number(obj_player); i++){
+//image_blend =  instance_find(obj_player,i).colorOut;
+}
+image_blend = c_red;
 </string>
           </argument>
         </arguments>
