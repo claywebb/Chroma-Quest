@@ -19,6 +19,28 @@
     <sprite>sprites\spr_mage</sprite>
     <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>
+    <sprites name="Chroma Cards">
+      <sprite>sprites\spr_card1</sprite>
+      <sprite>sprites\spr_card2</sprite>
+      <sprite>sprites\spr_card3</sprite>
+      <sprite>sprites\spr_card4</sprite>
+      <sprite>sprites\spr_card5</sprite>
+      <sprite>sprites\spr_card6</sprite>
+      <sprite>sprites\spr_card7</sprite>
+      <sprite>sprites\spr_card8</sprite>
+      <sprite>sprites\spr_card10</sprite>
+      <sprite>sprites\spr_card20</sprite>
+      <sprite>sprites\spr_card19</sprite>
+      <sprite>sprites\spr_card18</sprite>
+      <sprite>sprites\spr_card17</sprite>
+      <sprite>sprites\spr_card16</sprite>
+      <sprite>sprites\spr_card15</sprite>
+      <sprite>sprites\spr_card14</sprite>
+      <sprite>sprites\spr_card13</sprite>
+      <sprite>sprites\spr_card12</sprite>
+      <sprite>sprites\spr_card11</sprite>
+      <sprite>sprites\spr_card9</sprite>
+    </sprites>
     <sprite>sprites\spr_plate_down</sprite>
     <sprite>sprites\spr_timed_plate_down</sprite>
     <sprite>sprites\spr_brick</sprite>
@@ -62,6 +84,7 @@
     <sprite>sprites\spr_spike</sprite>
     <sprite>sprites\spr_bomb</sprite>
     <sprite>sprites\spr_shrapnel</sprite>
+    <sprite>sprites\spr_nextbtn</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -96,8 +119,10 @@
       <object>objects\obj_ccbtn</object>
       <object>objects\obj_instbtn</object>
       <object>objects\obj_backbtn</object>
+      <object>objects\obj_menubtn</object>
       <object>objects\obj_comsoon</object>
       <object>objects\obj_logo</object>
+      <object>objects\obj_nextbtn</object>
     </objects>
     <object>objects\obj_exit</object>
     <object>objects\obj_dragexit</object>
@@ -115,9 +140,26 @@
     </objects>
     <objects name="CC">
       <object>objects\obj_default</object>
+      <object>objects\obj_card2</object>
+      <object>objects\obj_card3</object>
+      <object>objects\obj_card4</object>
+      <object>objects\obj_card5</object>
+      <object>objects\obj_card6</object>
+      <object>objects\obj_card7</object>
+      <object>objects\obj_card8</object>
+      <object>objects\obj_card9</object>
+      <object>objects\obj_card10</object>
+      <object>objects\obj_card11</object>
+      <object>objects\obj_card12</object>
+      <object>objects\obj_card13</object>
+      <object>objects\obj_card14</object>
+      <object>objects\obj_card15</object>
+      <object>objects\obj_card16</object>
+      <object>objects\obj_card17</object>
+      <object>objects\obj_card18</object>
+      <object>objects\obj_card19</object>
+      <object>objects\obj_card20</object>
       <object>objects\obj_dropper</object>
-      <object>objects\obj_oneshot</object>
-      <object>objects\obj_risky</object>
     </objects>
     <object>objects\obj_startup</object>
     <objects name="Boss">
@@ -135,6 +177,8 @@
     <room>rooms\rm_splash</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_cc</room>
+    <room>rooms\rm_cc2</room>
+    <room>rooms\rm_cc3</room>
     <room>rooms\rm_instr</room>
     <room>rooms\rm_alpha</room>
     <room>rooms\rm_level1_</room>

@@ -56,6 +56,7 @@
             <string>if (health&gt;100) {draw_healthbar(10,10,90,30,health,c_silver,c_red,c_aqua,0,true,true);}
 else{
 draw_healthbar(10,10,90,30,health,c_silver,c_red,c_green,0,true,true);}
+room_speed= 30 *global.gamespeed;
 </string>
           </argument>
         </arguments>

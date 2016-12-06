@@ -147,24 +147,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_point(global.plx, global.ply) &gt;= 250 and !inrange) {
+            <string>//If the player is farther than 250 units away and is not in range...
+if (distance_to_point(global.plx, global.ply) &gt;= 250 and !inrange) {
+    //path towards the player
     grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
     path = path_add();
     mp_grid_add_instances(grid, obj_wall,0);
     mp_grid_path(grid,path,x,y,global.plx, global.ply,1);
     path_start(path,3*global.gamespeed,"",1);
 }
+
+//If the player leave 300 units away...
 if (distance_to_point(global.plx, global.ply) &gt;= 300 and inrange){
-   inrange = false;
-    spr_index = spr_mage;
-    with(obj_firetarg){instance_destroy();}
+    inrange = false; //set variable saying you are no longer in range
+    spr_index = spr_mage; //reset appearance back to default
+    with(obj_firetarg){instance_destroy();} //destroy any stray targets
 }
+
+//If the player is within 250 units...
 if (distance_to_point(global.plx, global.ply) &lt;= 250 and !inrange){
-    path_end();
-    spr_index = spr_magePower;
-    alarm[0] = global.reloadtime;
-    inrange = true;
-    instance_create(global.plx,global.ply,obj_firetarg);
+    path_end(); //Stop moving towards the player
+    spr_index = spr_magePower;  //Change appearance of mage
+    alarm[0] = global.reloadtime; //Start counting until you can fire again
+    inrange = true; //set variable that you are within 300
+    instance_create(global.plx,global.ply,obj_firetarg); //Create a the target for the fire
 }
 </string>
           </argument>

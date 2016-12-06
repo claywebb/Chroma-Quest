@@ -51,10 +51,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for (i = 0; i &lt;= 3; i++){
-    randomize();
-    n = irandom(8) + 1;
-    instance_create(x+((n%3)-1)*32,y+((n/3)-1)*32,obj_groundfire);
+            <string>for (i = 0; i &lt;= 3; i++){ //makes three fire instances
+    randomize(); //resets the randomizer
+    n = irandom(8) + 1; //picks a random integer 1-9
+    instance_create(x+((n%3)-1)*32,y+((n/3)-1)*32,obj_groundfire); //see exp. below
 }
 </string>
           </argument>

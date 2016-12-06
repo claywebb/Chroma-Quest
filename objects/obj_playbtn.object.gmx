@@ -26,31 +26,188 @@
           <argument>
             <kind>1</kind>
             <string>switch (global.cardID) {
-    case 0: //Default
-        global.phealth = 100;
-        lives = 3;
-        global.knockback = 50;
-        global.swingspeed = room_speed * (1/3);
-        global.sword_dmg = 40;
-        global.gamespeed = 1.00;
-        break;
-    case 1: //Risky
-        global.phealth = 150;
-        lives = 2;
-        global.knockback = 50;
-        global.swingspeed = room_speed * (1/3);
-        global.sword_dmg = 60;
-        global.gamespeed = 2.00;
-        break;
-    case 2: //Oneshot
-        global.phealth = 80;
-        lives = 2;
-        global.knockback = 50;
-        global.swingspeed = room_speed  * (2/3);
-        global.sword_dmg = 100;
-        global.gamespeed = 1.00;
-        break;
+case 1: //Default
+global.phealth = 100;
+lives = 3;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 2: //Bonus Health
+global.phealth = 110;
+lives = 3;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 3: //Bonus Damage
+global.phealth = 100;
+lives = 3;
+global.knockback = 50;
+global.swingspeed =  room_speed * (0.75/3);
+global.sword_dmg = 45;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 4: //Bonus Time
+global.phealth = 100;
+lives = 3;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 0.8;
+global.rarity = 1;
+break;
+case 5: //Careful Strikes
+global.phealth = 100;
+lives = 3;
+global.knockback = 75;
+global.swingspeed =  room_speed * (1.5/3);
+global.sword_dmg = 75;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 6: //Deep Cuts
+global.phealth = 100;
+lives = 3;
+global.knockback = 40;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 60;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 7: //Quick Blows
+global.phealth = 100;
+lives = 3;
+global.knockback = 40;
+global.swingspeed =  room_speed * (0.75/3);
+global.sword_dmg = 40;
+global.gamespeed = 1.5;
+global.rarity = 1;
+break;
+case 8: //Big Push
+global.phealth = 100;
+lives = 3;
+global.knockback = 75;
+global.swingspeed =  room_speed * (1.5/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 9: //Extra Life?
+global.phealth = 75;
+lives = 4;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 10: //Mega Health?
+global.phealth = 150;
+lives = 2;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 1;
+break;
+case 11: //Samurai Steve
+global.phealth = 90;
+lives = 3;
+global.knockback = 30;
+global.swingspeed =  room_speed * (0.5/3);
+global.sword_dmg = 60;
+global.gamespeed = 2;
+global.rarity = 2;
+break;
+case 12: //Tom the Tank
+global.phealth = 120;
+lives = 3;
+global.knockback = 60;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 2;
+break;
+case 13: //Fourth Chance Frank
+global.phealth = 100;
+lives = 4;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 2;
+break;
+case 14: //Slow Mo Sam
+global.phealth = 100;
+lives = 2;
+global.knockback = 50;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 0.75;
+global.rarity = 2;
+break;
+case 15: //One Shot Wanda
+global.phealth = 80;
+lives = 2;
+global.knockback = 50;
+global.swingspeed =  room_speed * (2/3);
+global.sword_dmg = 100;
+global.gamespeed = 1;
+global.rarity = 2;
+break;
+case 16: //The Last Chance
+global.phealth = 150;
+lives = 1;
+global.knockback = 75;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 100;
+global.gamespeed = 1;
+global.rarity = 3;
+break;
+case 17: //The Skeleton Knight
+global.phealth = 50;
+lives = 8;
+global.knockback = 30;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 40;
+global.gamespeed = 1;
+global.rarity = 3;
+break;
+case 18: //The Wind Lord
+global.phealth = 125;
+lives = 3;
+global.knockback = 100;
+global.swingspeed =  room_speed * (0.75/3);
+global.sword_dmg = 40;
+global.gamespeed = 1.5;
+global.rarity = 3;
+break;
+case 19: //The Pixel Perfector
+global.phealth = 125;
+lives = 2;
+global.knockback = 30;
+global.swingspeed =  room_speed * (1/3);
+global.sword_dmg = 50;
+global.gamespeed = 0.5;
+global.rarity = 3;
+break;
+case 20: //The Dragon Slayer
+global.phealth = 75;
+lives = 4;
+global.knockback = 25;
+global.swingspeed =  room_speed * (1.5/3);
+global.sword_dmg = 150;
+global.gamespeed = 1;
+global.rarity = 3;
+break;
 }
+
 </string>
           </argument>
         </arguments>
