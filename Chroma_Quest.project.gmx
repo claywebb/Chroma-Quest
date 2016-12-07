@@ -162,10 +162,10 @@
       <object>objects\obj_card18</object>
       <object>objects\obj_card19</object>
       <object>objects\obj_card20</object>
-      <object>objects\obj_dropper</object>
       <object>objects\obj_opentop</object>
       <object>objects\obj_openbot</object>
       <object>objects\obj_newcard</object>
+      <object>objects\obj_dragcard</object>
     </objects>
     <object>objects\obj_startup</object>
     <objects name="Boss">
@@ -190,6 +190,7 @@
     <room>rooms\rm_level1_</room>
     <room>rooms\rm_bossroom</room>
     <room>rooms\rm_opencard</room>
+    <room>rooms\rm_dragcard</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
