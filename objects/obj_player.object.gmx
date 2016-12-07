@@ -500,7 +500,7 @@ spike_color = other.image_blend;
             <kind>1</kind>
             <string>    if (lives == 1){
         show_message("You Lose! Try Again");
-        room_goto(rm_menu);
+        room_goto(rm_opencard);
     }
     sprite_index = spr_playerghost;
     alarm[5] = 45;

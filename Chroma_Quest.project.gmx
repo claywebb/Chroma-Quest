@@ -19,6 +19,7 @@
     <sprite>sprites\spr_mage</sprite>
     <sprite>sprites\spr_magePower</sprite>
     <sprite>sprites\spr_skely2</sprite>
+    <sprite>sprites\spr_cardlocked</sprite>
     <sprites name="Chroma Cards">
       <sprite>sprites\spr_card1</sprite>
       <sprite>sprites\spr_card2</sprite>
@@ -85,6 +86,8 @@
     <sprite>sprites\spr_bomb</sprite>
     <sprite>sprites\spr_shrapnel</sprite>
     <sprite>sprites\spr_nextbtn</sprite>
+    <sprite>sprites\spr_opentop</sprite>
+    <sprite>sprites\spr_openbot</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -160,6 +163,9 @@
       <object>objects\obj_card19</object>
       <object>objects\obj_card20</object>
       <object>objects\obj_dropper</object>
+      <object>objects\obj_opentop</object>
+      <object>objects\obj_openbot</object>
+      <object>objects\obj_newcard</object>
     </objects>
     <object>objects\obj_startup</object>
     <objects name="Boss">
@@ -183,6 +189,7 @@
     <room>rooms\rm_alpha</room>
     <room>rooms\rm_level1_</room>
     <room>rooms\rm_bossroom</room>
+    <room>rooms\rm_opencard</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

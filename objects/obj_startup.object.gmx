@@ -53,7 +53,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -150,6 +150,67 @@
           <argument>
             <kind>0</kind>
             <string>room_speed * (1/3)</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.cl2 = true;
+global.cl3 = true;
+global.cl4 = true;
+global.cl5 = true;
+global.cl6 = true;
+global.cl7 = true;
+global.cl8 = true;
+global.cl9 = true;
+global.cl10 = true;
+global.cl11 = true;
+global.cl12 = true;
+global.cl13 = true;
+global.cl14 = true;
+global.cl15 = true;
+global.cl16 = true;
+global.cl17 = true;
+global.cl18 = true;
+global.cl19 = true;
+global.cl20 = true;
+
+global.locks[2] = global.cl2
+global.locks[3] = global.cl3
+global.locks[4] = global.cl4
+global.locks[5] = global.cl5
+global.locks[6] = global.cl6
+global.locks[7] = global.cl7
+global.locks[8] = global.cl8
+global.locks[9] = global.cl9
+global.locks[10] = global.cl10
+global.locks[11] = global.cl11
+global.locks[12] = global.cl12
+global.locks[13] = global.cl13
+global.locks[14] = global.cl14
+global.locks[15] = global.cl15
+global.locks[16] = global.cl16
+global.locks[17] = global.cl17
+global.locks[18] = global.cl18
+global.locks[19] = global.cl19
+global.locks[20] = global.cl20
+
+
+</string>
           </argument>
         </arguments>
       </action>

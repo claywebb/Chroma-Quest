@@ -52,11 +52,11 @@
   </views>
   <instances>
     <instance objName="obj_backbtn" x="224" y="640" name="inst_5E34A570" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_card17" x="32" y="64" name="inst_F4D12B86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_card18" x="288" y="64" name="inst_1165DFC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_card19" x="544" y="64" name="inst_A1B926FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_card20" x="800" y="64" name="inst_DDD4D956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nextbtn" x="608" y="640" name="inst_00602B80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_card17" x="32" y="64" name="inst_20B12D94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_card18" x="288" y="64" name="inst_1BD20082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_card19" x="544" y="64" name="inst_7CF9C946" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_card20" x="800" y="64" name="inst_B437F388" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
