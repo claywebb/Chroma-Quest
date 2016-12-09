@@ -99,7 +99,7 @@
           <argument>
             <kind>1</kind>
             <string>if (distance_to_point(global.plx, global.ply) &gt;= 250) {
-    grid = mp_grid_create(0,0,room_width/32, room_height/32,32,32);
+    grid = mp_grid_create(0,0,room_width/16, room_height/16,16,16);
     path = path_add();
     mp_grid_add_instances(grid, obj_wall,0);
     mp_grid_path(grid,path,x,y,global.plx, global.ply,1);

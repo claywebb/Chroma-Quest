@@ -68,7 +68,6 @@ if (irandom(10)&lt;6){
 }
 else if(irandom(4)&lt;3) {
     i = irandom(6);
-    global.locked[11+i] = false;
     switch(i) {
         case 0: sprite_index = spr_card11; global.cl11 = false; break;
         case 1: sprite_index = spr_card12; global.cl12 = false; break;;
@@ -80,7 +79,6 @@ else if(irandom(4)&lt;3) {
 }
 else {
     i = irandom(4);
-    global.locked[17+i] = false;
     switch(i) {
         case 0: sprite_index = spr_card17; global.cl17 = false; break;
         case 1: sprite_index = spr_card18; global.cl18 = false; break;
