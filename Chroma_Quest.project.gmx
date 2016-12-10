@@ -15,6 +15,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_playersword</sprite>
     <sprite>sprites\spr_skely</sprite>
+    <sprite>sprites\spr_black</sprite>
     <sprite>sprites\spr_tempskel</sprite>
     <sprite>sprites\spr_mage</sprite>
     <sprite>sprites\spr_magePower</sprite>
@@ -53,6 +54,7 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_playerghost</sprite>
     <sprite>sprites\spr_unmuted</sprite>
+    <sprite>sprites\spr_pausetext</sprite>
     <sprite>sprites\spr_gate</sprite>
     <sprite>sprites\spr_gate_rec</sprite>
     <sprite>sprites\spr_receptacle</sprite>
@@ -84,12 +86,14 @@
     <sprite>sprites\spr_splash_sword</sprite>
     <sprite>sprites\spr_spike</sprite>
     <sprite>sprites\spr_bomb</sprite>
+    <sprite>sprites\spr_floor</sprite>
     <sprite>sprites\spr_shrapnel</sprite>
     <sprite>sprites\spr_nextbtn</sprite>
     <sprite>sprites\spr_opentop</sprite>
     <sprite>sprites\spr_openbot</sprite>
   </sprites>
   <backgrounds name="background">
+    <background>background\brick_floor</background>
     <background>background\background</background>
   </backgrounds>
   <paths name="paths"/>
@@ -178,6 +182,12 @@
     <object>objects\obj_barrel</object>
     <object>objects\obj_heart</object>
     <object>objects\obj_splash_sword</object>
+    <object>objects\obj_pause</object>
+    <objects name="PauseMenu">
+      <object>objects\obj_pausetext</object>
+    </objects>
+    <object>objects\obj_floor</object>
+    <object>objects\obj_black</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash</room>
@@ -186,11 +196,13 @@
     <room>rooms\rm_cc2</room>
     <room>rooms\rm_cc3</room>
     <room>rooms\rm_instr</room>
+    <room>rooms\rm_opencard</room>
+    <room>rooms\rm_dragcard</room>
+    <room>rooms\rm_pause</room>
+    <room>rooms\lvl_1</room>
     <room>rooms\rm_alpha</room>
     <room>rooms\rm_level1_</room>
     <room>rooms\rm_bossroom</room>
-    <room>rooms\rm_opencard</room>
-    <room>rooms\rm_dragcard</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
