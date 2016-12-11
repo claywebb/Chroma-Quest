@@ -46,6 +46,7 @@
     <sprite>sprites\spr_plate_down</sprite>
     <sprite>sprites\spr_timed_plate_down</sprite>
     <sprite>sprites\spr_brick</sprite>
+    <sprite>sprites\spr_inviswall</sprite>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_plate_up</sprite>
     <sprite>sprites\spr_timed_plate_up</sprite>
@@ -91,6 +92,7 @@
     <sprite>sprites\spr_nextbtn</sprite>
     <sprite>sprites\spr_opentop</sprite>
     <sprite>sprites\spr_openbot</sprite>
+    <sprite>sprites\sprite74</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\brick_floor</background>
@@ -109,6 +111,7 @@
     <object>objects\obj_player</object>
     <object>objects\obj_HUD</object>
     <object>objects\obj_wall</object>
+    <object>objects\obj_inviswall</object>
     <object>objects\obj_playersword</object>
     <object>objects\obj_plate</object>
     <object>objects\obj_momentary_plate</object>
@@ -200,8 +203,9 @@
     <room>rooms\rm_dragcard</room>
     <room>rooms\rm_pause</room>
     <room>rooms\lvl_1</room>
-    <room>rooms\rm_alpha</room>
-    <room>rooms\rm_level1_</room>
+    <room>rooms\lvl2</room>
+    <room>rooms\lvl3_old_alpha</room>
+    <room>rooms\lvl4_old_level1</room>
     <room>rooms\rm_bossroom</room>
   </rooms>
   <help>
