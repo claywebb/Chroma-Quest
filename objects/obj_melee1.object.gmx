@@ -148,7 +148,7 @@ path_start(path,3*global.gamespeed,"",1);
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-35</string>
+            <string>-30</string>
           </argument>
         </arguments>
       </action>

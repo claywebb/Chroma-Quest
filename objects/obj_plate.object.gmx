@@ -26,12 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>// Setup Random Tile Color
+{
 randomize();
 
 i = irandom(4);
 self.image_blend = colors[i];
 
 pressed = false;
+}
 </string>
           </argument>
         </arguments>
