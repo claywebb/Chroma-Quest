@@ -124,6 +124,47 @@ if (player_color == plate_color) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Find the colors of the player and plate
+player_color = other.colorOut;
+plate_color = self.image_blend;
+
+// If the plate is the same color, depress the plate
+if (player_color == plate_color) {
+    var i;
+   for (i = 0; i &lt; instance_number(obj_downgate); i++)
+   {
+   // Activate all the gates that are the same color as the plate
+    instance = instance_find(obj_downgate,i);
+    if (instance.image_blend == plate_color){
+        instance.open = true;
+        instance.image_alpha = .5;
+        instance.solid = false;
+    }
+   }
+    pressed = true;
+    
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>

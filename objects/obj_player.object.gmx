@@ -295,7 +295,7 @@ spike_color = other.image_blend;
   { 
          if (player_color != spike_color) 
      {
-            health -= 20 
+            health -= 40 
             invincible = 1  
             alarm[0] = 60 
             alarm[1] = 1

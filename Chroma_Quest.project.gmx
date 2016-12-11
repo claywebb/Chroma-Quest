@@ -44,12 +44,10 @@
       <sprite>sprites\spr_card9</sprite>
     </sprites>
     <sprite>sprites\spr_plate_down</sprite>
-    <sprite>sprites\spr_timed_plate_down</sprite>
     <sprite>sprites\spr_brick</sprite>
     <sprite>sprites\spr_inviswall</sprite>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_plate_up</sprite>
-    <sprite>sprites\spr_timed_plate_up</sprite>
     <sprite>sprites\spr_fireball</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_player</sprite>
@@ -57,7 +55,6 @@
     <sprite>sprites\spr_unmuted</sprite>
     <sprite>sprites\spr_pausetext</sprite>
     <sprite>sprites\spr_gate</sprite>
-    <sprite>sprites\spr_gate_rec</sprite>
     <sprite>sprites\spr_receptacle</sprite>
     <sprite>sprites\spr_playbtn</sprite>
     <sprite>sprites\spr_ccbtn</sprite>
@@ -115,11 +112,9 @@
     <object>objects\obj_playersword</object>
     <object>objects\obj_plate</object>
     <object>objects\obj_momentary_plate</object>
-    <object>objects\obj_timed_plate</object>
-    <object>objects\obj_setplate</object>
     <object>objects\obj_gate</object>
+    <object>objects\obj_downgate</object>
     <object>objects\obj_gate_rec</object>
-    <object>objects\obj_setgate</object>
     <object>objects\obj_spike</object>
     <object>objects\obj_receptacle</object>
     <objects name="Menu">
@@ -206,6 +201,9 @@
     <room>rooms\lvl2</room>
     <room>rooms\lvl3_old_alpha</room>
     <room>rooms\lvl4_old_level1</room>
+    <room>rooms\lvl5</room>
+    <room>rooms\lvl6</room>
+    <room>rooms\lvl7</room>
     <room>rooms\rm_bossroom</room>
   </rooms>
   <help>
