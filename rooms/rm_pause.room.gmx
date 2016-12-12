@@ -52,6 +52,9 @@
   </views>
   <instances>
     <instance objName="obj_pausetext" x="512" y="160" name="inst_A53EF189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_resumebtn" x="352" y="288" name="inst_F0D86A29" locked="0" code="" scaleX="0.914285719394684" scaleY="0.82051283121109" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mainmenubtn" x="352" y="448" name="inst_7CF61E99" locked="0" code="" scaleX="0.914285719394684" scaleY="0.82051283121109" colour="4294967295" rotation="0"/>
+    <instance objName="obj_restartbtn" x="352" y="608" name="inst_7E3AE23C" locked="0" code="" scaleX="0.914285719394684" scaleY="0.82051283121109" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

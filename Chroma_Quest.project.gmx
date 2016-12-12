@@ -93,6 +93,7 @@
     <sprite>sprites\spr_opentop</sprite>
     <sprite>sprites\spr_openbot</sprite>
     <sprite>sprites\sprite74</sprite>
+    <sprite>sprites\spr_pause</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\brick_floor</background>
