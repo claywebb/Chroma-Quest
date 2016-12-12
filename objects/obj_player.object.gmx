@@ -555,6 +555,7 @@ spike_color = other.image_blend;
             <kind>1</kind>
             <string>    if (lives == 1){
         show_message("You Lose! Try Again");
+        window_set_fullscreen(true);
         room_goto(rm_opencard);
     }
     sprite_index = spr_playerghost;

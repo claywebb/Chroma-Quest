@@ -19,6 +19,9 @@
     <sprite>sprites\spr_tempskel</sprite>
     <sprite>sprites\spr_mage</sprite>
     <sprite>sprites\spr_magePower</sprite>
+    <sprite>sprites\spr_resume_btn</sprite>
+    <sprite>sprites\spr_mainmenu_btn</sprite>
+    <sprite>sprites\spr_restart_btn</sprite>
     <sprite>sprites\spr_skely2</sprite>
     <sprite>sprites\spr_cardlocked</sprite>
     <sprites name="Chroma Cards">
@@ -183,6 +186,9 @@
     <object>objects\obj_pause</object>
     <objects name="PauseMenu">
       <object>objects\obj_pausetext</object>
+      <object>objects\obj_restartbtn</object>
+      <object>objects\obj_resumebtn</object>
+      <object>objects\obj_mainmenubtn</object>
     </objects>
     <object>objects\obj_floor</object>
     <object>objects\obj_black</object>

@@ -209,6 +209,7 @@ global.locks[18] = global.cl18
 global.locks[19] = global.cl19
 global.locks[20] = global.cl20
 
+global.roomBeforePause = 0;
 window_set_fullscreen(true);
 </string>
           </argument>
