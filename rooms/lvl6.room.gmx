@@ -420,7 +420,7 @@
     <instance objName="obj_black" x="960" y="0" name="inst_A25644F4" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_black" x="960" y="0" name="inst_32C59842" locked="0" code="" scaleX="1" scaleY="11.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_black" x="0" y="704" name="inst_B5CD8DFB" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dragexit" x="736" y="32" name="inst_F21186B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_dragexit" x="768" y="32" name="inst_F21186B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_inviswall" x="224" y="0" name="inst_B0B9BB87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inviswall" x="256" y="0" name="inst_6DF2C779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="224" y="64" name="inst_67926353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -450,6 +450,8 @@
     <instance objName="obj_HUD" x="256" y="32" name="inst_62EDF0A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="992" y="32" name="inst_2D0F2759" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_mutebtn" x="928" y="32" name="inst_BF267E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inviswall" x="224" y="0" name="inst_0AC70213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inviswall" x="256" y="0" name="inst_2881CC18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
